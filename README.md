@@ -7,7 +7,7 @@
 | Name | Mike Izbicki (you can call me either Mike or Prof Izbicki) |
 | Email | mizbicki@cmc.edu |
 | Office | Adams 216 |
-| Office Hours | Tuesday/Thursday 2:40-4:10 or by appointment ([see my schedule](https://izbicki.me/scedule.html));<br/> if my door is open, feel free to come in |
+| Office Hours | Monday 9:00-10:00AM, Tuesday/Thursday 2:30-3:30PM, or by appointment ([see my schedule](https://izbicki.me/schedule.html));<br/> if my door is open, feel free to come in |
 | Webpage | [izbicki.me](https://izbicki.me) |
 | Research | Machine Learning (see [izbicki.me/research.html](https://izbicki.me/research.html) for some past projects) |
 | Fun Facts | grew up in San Clemente, 7 years in the navy, phd/postdoc at UC Riverside, taught in [DPRK](https://pust.co) |

@@ -4,7 +4,7 @@
 
 |||
 |-|-|
-| Name | Mike Izbicki (you can call me either Mike or Prof Izbicki) |
+| Name | Mike Izbicki (call me Mike) |
 | Email | mizbicki@cmc.edu |
 | Office | Adams 216 |
 | Office Hours | Monday 9:00-10:00AM, Tuesday/Thursday 2:30-3:30PM, or by appointment ([see my schedule](https://izbicki.me/schedule.html));<br/> if my door is open, feel free to come in |
@@ -30,14 +30,14 @@ Learning objectives:
 
 My personal goal:
 
-1. Find students to conduct research with me 
+1. Find students to conduct research with me
 
 **Expected Background:**
 
 Necessary:
 
 1. Basic Python programming
-1. Linear algebra 
+1. Linear algebra
 1. Calc III
 1. Statistics
 
@@ -172,7 +172,7 @@ If you have extenuating circumstances, contact me in advance of the due date and
 **Collaboration Policy:**
 
 You are encouraged to work together with other students on all assignments and use any online resources.
-Learning the course material is your responsibility, 
+Learning the course material is your responsibility,
 and so do whatever collaboration will help you learn the material.
 
 <!--

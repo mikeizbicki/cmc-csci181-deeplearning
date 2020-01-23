@@ -114,7 +114,7 @@ Computing resources:
 | Week | Date         | Topic                                   |
 | ---- | ------------ | --------------------------------------  |
 | 1    | Tues, 21 Jan | Intro: Examples of Deep Learning        |
-| 1    | Thur, 23 Jan | Automatic differentiation<br><ul><li>[pytorch tutorial part 1](https://pytorch.org/tutorials/beginner/blitz/tensor_tutorial.html)</li><li>[pytorch tutorial part 2](https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html)</li><li>[automatic differentiation tutorial](https://rufflewind.com/2016-12-30/reverse-mode-automatic-differentiation)</li><li>[einstein summation tutorial](https://rockt.github.io/2018/04/30/einsum)</li></ul> |
+| 1    | Thur, 23 Jan | Automatic differentiation<br><ul><li>[pytorch tutorial part 1](https://pytorch.org/tutorials/beginner/blitz/tensor_tutorial.html)</li><li>[pytorch tutorial part 2](https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html)</li><li>[automatic differentiation tutorial](https://rufflewind.com/2016-12-30/reverse-mode-automatic-differentiation)</li><li>[einstein summation tutorial](https://rockt.github.io/2018/04/30/einsum)</li><li>[NeurIPS paper](http://papers.nips.cc/paper/8092-automatic-differentiation-in-ml-where-we-are-and-where-we-should-be-going)</li><li>[JMLR paper](http://www.jmlr.org/papers/v18/17-468.html)</li></ul> |
 | 2    | Tues, 28 Jan | Machine Learning Basics (Deep Learning Book Part 1, especially chapters 5.2-5.4)                 |
 | 2    | Thur, 30 Jan | Optimization                            |
 | 3    | Tues, 04 Feb | Image: CNNs                             |

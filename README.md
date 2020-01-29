@@ -109,6 +109,17 @@ Computing resources:
 1. I have a 40CPU/8GPU machine that you can access for the course
 1. I have another 4CPU/1GPU machine that needs someone to set it up
 
+Videos:
+
+1. [3blue1brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
+1. [2 minute papers](https://www.youtube.com/user/keeroyz)
+1. [arxiv insights](https://www.youtube.com/channel/UCNIkB2IeJ-6AmZv7bQ1oBYg)
+
+<!--
+FIXME:
+[What's wrong with notebooks](http://web.eecs.utk.edu/~azh/blog/notebookpainpoints.html)
+-->
+
 ## Schedule
 
 | Week | Date         | Topic                                   |

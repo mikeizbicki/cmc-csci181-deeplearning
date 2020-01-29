@@ -70,15 +70,18 @@ b = torch.tensor(torch.rand(10),requires_grad=True)
 def f(x):
     return torch.einsum('bijk,ijkl -> bl',x,w)+b
 
-# optimize 
-
+# optimize
 criterion = nn.CrossEntropyLoss()
-
 loss=float('inf')
 for epoch in range(args.epochs):
     for i, data in enumerate(trainloader, 0):
         if i%1000==0:
-            print(datetime.datetime.now(),'epoch=',epoch,'i=',i,'loss=',loss)
+            print(
+                datetime.datetime.now(),
+                'epoch=',epoch,
+                'i=',i,
+                'loss=',loss
+                )
         images, labels = data
         outputs = f(images)
         loss = criterion(outputs,labels)

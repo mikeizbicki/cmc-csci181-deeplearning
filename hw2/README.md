@@ -32,6 +32,9 @@ however they are good exercises to get you familiar with pytorch.
    (This will require changing code in both the `load dataset` and the `define the model` sections of code.)
    Torchvision has many other datasets as well (see https://pytorch.org/docs/stable/torchvision/datasets.html), and you can add these datasets too. 
 
+1. Add a "deep" neural network as one of the possible classifiers that has more than 1 hidden layer.
+   Make the number of layers and the size of each layer a parameter on the command line.
+
 ## Submission
 
 Upload your `classifier.py` file to sakai

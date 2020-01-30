@@ -9,8 +9,8 @@ Modify the `classifier.py` file so that:
 1. Adjust the training procedure so that the test set is evaluated at the end of every epoch.
 
 1. Implement two new models: the random feature model and the 1 hidden layer neural network model.
-   You should add a command line argument `--model` which takes one of three options
-   (`linear`, `random_feature`, and `nn`)
+   You should add a command line argument `--model` which takes one of four options
+   (`linear`, `factorized_linear`, `random_feature`, and `nn`)
    and another argument `--size` which takes takes an integer argument and controls the number of random features or the size of the hidden layer, depending on the model.
    This will require modifying the `define the model` and the `optimization` sections of the homework file.
 

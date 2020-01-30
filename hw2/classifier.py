@@ -63,6 +63,10 @@ if args.show_image:
     # show images
     imshow(torchvision.utils.make_grid(images))
 
+    # exit
+    import sys
+    sys.exit(0)
+
 # define the model
 w = torch.tensor(torch.rand(3,32,32,10),requires_grad=True)
 b = torch.tensor(torch.rand(10),requires_grad=True)
@@ -72,7 +76,7 @@ def f(x):
 
 # optimize
 criterion = nn.CrossEntropyLoss()
-loss=float('inf')
+loss = float('inf')
 for epoch in range(args.epochs):
     for i, data in enumerate(trainloader, 0):
         if i%1000==0:

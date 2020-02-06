@@ -129,8 +129,8 @@ FIXME:
 | 2    | Tues, 28 Jan | Machine Learning Basics (Deep Learning Book Part 1, especially chapters 5.2-5.4)                 |
 | 2    | Thur, 30 Jan | Optimization<br><ul><li>[why momentum really works](https://distill.pub/2017/momentum/)</li><li>[Leon Bottou's SGD paper](https://datajobs.com/data-science-repo/Stochastic-Gradient-Descent-[Leon-Bottou].pdf)</li><li>[pytorch loss functions](https://pytorch.org/docs/stable/nn.html#crossentropyloss)</li><li>[reflections on random kitchen sinks](http://www.argmin.net/2017/12/05/kitchen-sinks/)</li><li>[Ali Rahimi's NIPS/NeurIPS 2017 keynote](https://www.youtube.com/watch?v=Qi1Yry33TQE)</li><li>[OpenAI switches to PyTorch](https://openai.com/blog/openai-pytorch/)</li></ul>                            |
 | 3    | Tues, 04 Feb | Image: CNNs<br><ul><li>[Stanford lecture slides](http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture05.pdf)</li></ul>                             |
-| 3    | Thur, 06 Feb | Regularization: Dropout ([JMLR](http://jmlr.org/papers/v15/srivastava14a.html), [pytorch](https://stackoverflow.com/questions/53419474/using-dropout-in-pytorch-nn-dropout-vs-f-dropout)) |
-| 4    | Tues, 11 Feb | Regularization: BatchNorm ([ICML](http://proceedings.mlr.press/v37/ioffe15.html), [pytorch](https://stackoverflow.com/questions/47197885/how-to-do-fully-connected-batch-norm-in-pytorch))              |
+| 3    | Thur, 06 Feb | Image: CNNs II<br><ul><li>[An intuitive explanation of CNNs](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/)</li><li>[The history of neural networks](https://dataconomy.com/2017/04/history-neural-networks/)</li></ul> |
+| 4    | Tues, 11 Feb | Regularization                          |
 | 4    | Thur, 13 Feb | Image: ResNet                           |
 | 5    | Tues, 18 Feb | Image: YOLO                             |
 | 5    | Thur, 20 Feb | Image: Adversarial Examples             |
@@ -156,6 +156,11 @@ FIXME:
 | 15   | Thur, 30 Apr | Project Presentations                   |
 | 16   | Thur, 05 May | Project Presentations                   |
 | 16   | Thur, 07 May | **NO CLASS:** Reading Day               |
+
+<!--
+| 3    | Thur, 06 Feb | Regularization: Dropout ([JMLR](http://jmlr.org/papers/v15/srivastava14a.html), [pytorch](https://stackoverflow.com/questions/53419474/using-dropout-in-pytorch-nn-dropout-vs-f-dropout)) |
+| 4    | Tues, 11 Feb | Regularization: BatchNorm ([ICML](http://proceedings.mlr.press/v37/ioffe15.html), [pytorch](https://stackoverflow.com/questions/47197885/how-to-do-fully-connected-batch-norm-in-pytorch))              |
+-->
 
 <!-- GoogLeNet: https://arxiv.org/abs/1409.4842 -->
 <!-- MAY 8: Senior Grades due -->

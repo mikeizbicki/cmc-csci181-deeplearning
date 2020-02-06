@@ -16,6 +16,10 @@
 
 This is a course on **deep learning** (not big data).
 
+<p align=center>
+<img src=img/layers.png width=600px>
+</p>
+
 **Course Objectives:**
 
 Learning objectives:

@@ -135,7 +135,7 @@ FIXME:
 | 3    | Tues, 04 Feb | Image: CNNs<br><ul><li>[Stanford lecture slides](http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture05.pdf)</li></ul>                             |
 | 3    | Thur, 06 Feb | Image: CNNs II<br><ul><li>[An intuitive explanation of CNNs](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/) (compare with [eigenfaces](https://towardsdatascience.com/eigenfaces-recovering-humans-from-ghosts-17606c328184))</li><li>[The history of neural networks](https://dataconomy.com/2017/04/history-neural-networks/)</li></ul>[Summer Research](https://www.cmc.edu/summer-research/program-overview) |
 | 4    | Tues, 11 Feb | Regularization                          |
-| 4    | Thur, 13 Feb | Image: ResNet<br><ul><li>[Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)</li><li>[An Overview of ResNet and its Variants](https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035)</li></ul>                           |
+| 4    | Thur, 13 Feb | Image: ResNet<br><ul><li>[Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)</li><li>[An Overview of ResNet and its Variants](https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035)</li><li>[CVPR2016 Video](https://www.youtube.com/watch?v=C6tLw-rPQ2o)</li></ul>                           |
 | 5    | Tues, 18 Feb | Image: YOLO                             |
 | 5    | Thur, 20 Feb | Image: Adversarial Examples             |
 | 6    | Tues, 25 Feb | Text: Word vs Character Models          |
@@ -167,7 +167,7 @@ FIXME:
 
 
 <!--
-| 5    | Tues, 18 Feb | Image: YOLO<br><ul><li>[YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767)</li><li>[YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242) and [reviews](https://pjreddie.com/publications/yolo9000/)</li><li>[You Only Look Once: Unified Real-Time Object Detection](http://arxiv.org/abs/1506.02640) and [reviews](https://pjreddie.com/publications/yolo/)</li><li>[Joseph Redmon's CV](https://pjreddie.com/static/Redmon%20Resume.pdf)</li></ul>                            |
+| 5    | Tues, 18 Feb | Image: YOLO<br><ul><li>[YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767)</li><li>[YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242) and [reviews](https://pjreddie.com/publications/yolo9000/)</li><li>[You Only Look Once: Unified Real-Time Object Detection](http://arxiv.org/abs/1506.02640) and [reviews](https://pjreddie.com/publications/yolo/)</li><li>[YOLO video example](https://www.youtube.com/watch?v=MPU2HistivI)</li><li>[YOLO video presentation](https://www.youtube.com/watch?v=NM6lrxy0bxs&feature=youtu.be)</li><li>[Joseph Redmon's CV](https://pjreddie.com/static/Redmon%20Resume.pdf)</li></ul>                            |
 -->
 
 <!--

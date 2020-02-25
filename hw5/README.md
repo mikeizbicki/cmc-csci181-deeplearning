@@ -27,7 +27,6 @@ Example images I created are:
 <p align=center><img src='mike2.png'></p>
 <p align=center><img src='mike3.png'></p>
 <p align=center><img src='mike4.png'></p>
-<p align=center><img src='mike5.png'></p>
 
 ### Optional
 

@@ -13,9 +13,9 @@ You are required to complete the following tasks:
 
 1. [This github repo](https://github.com/eriklindernoren/PyTorch-YOLOv3) contains a pytorch implementation of YOLOv3.
    Follow the directions to apply the YOLO object detection model to several of your own images.
-1. Adjust the code so that it outputs images at their original resolution by changing line to read
+1. Adjust the code so that it outputs images at their original resolution by changing the call to `plt.subplots(1)` to read
    ```
-   fig, ax = plt.subplots(1,figsize=(img.shape[1]/96, img.shape[0]/96), dpi=96)
+   plt.subplots(1,figsize=(img.shape[1]/96, img.shape[0]/96), dpi=96)
    ```
 1. Upload your favorite images to sakai.
 

@@ -37,6 +37,8 @@ however they are good exercises to get you familiar with pytorch.
    Experiment with different values of this parameter to see the effects on the outputs.
    You should notice that smaller images result in fewer objects detected,
    but larger images require more computation.
+1. Other parameters such as `--conf_thres` and `--nms_thres` adjust the model's results by trading off between object classification accuracy and localization accuracy.
+   Try adjusting these parameters to get better results on your images.
 
 ## Submission
 

@@ -1,7 +1,10 @@
 #!/bin/python3
 '''
+<<<<<<< HEAD
 Here are some results of running this code:
 
+=======
+>>>>>>> 246e250cb0ae0d8e78ca545c804ea92feb1c36ac
 > python3 classifier.py --dataset=mnist --model=linear
 test set accuracy =  0.9126833333333333
 > python3 classifier.py --dataset=mnist --model=factorized_linear
@@ -9,12 +12,17 @@ test set accuracy =  0.8846833333333334
 > python3 classifier.py --dataset=mnist --model=neural_network --size=256
 test set accuracy =  0.92685
 > python3 classifier.py --dataset=mnist --model=kitchen_sink --size=256
+<<<<<<< HEAD
 test set accuracy =  0.8658333333333333
+=======
+test set accuracy =  0.92685
+>>>>>>> 246e250cb0ae0d8e78ca545c804ea92feb1c36ac
 '''
 
 # process command line args
 import argparse
 parser = argparse.ArgumentParser()
+<<<<<<< HEAD
 
 parser_model = parser.add_argument_group('model options')
 parser_model.add_argument('--model',choices=['linear','factorized_linear','kitchen_sink','neural_network'],default='linear')
@@ -35,6 +43,18 @@ parser_debug.add_argument('--print_step',type=int,default=1000)
 parser_debug.add_argument('--ema_alpha',type=float,default=0.99)
 parser_debug.add_argument('--eval_each_epoch',action='store_true')
 
+=======
+parser.add_argument('--batch_size',type=int,default=16)
+parser.add_argument('--alpha',type=float,default=0.01)
+parser.add_argument('--epochs',type=int,default=10)
+parser.add_argument('--show_image',action='store_true')
+parser.add_argument('--size',type=int,default=32)
+parser.add_argument('--print_step',type=int,default=1000)
+parser.add_argument('--dataset',choices=['mnist','cifar10'])
+parser.add_argument('--ema_alpha',type=float,default=0.99)
+parser.add_argument('--model',choices=['linear','factorized_linear','kitchen_sink','neural_network'],default='linear')
+parser.add_argument('--eval_each_epoch',action='store_true')
+>>>>>>> 246e250cb0ae0d8e78ca545c804ea92feb1c36ac
 args = parser.parse_args()
 
 # imports
@@ -44,11 +64,17 @@ import torch.nn as nn
 import torchvision
 import torchvision.transforms as transforms
 
+<<<<<<< HEAD
 # make deterministic
 if args.seed is not None:
     torch.manual_seed(0)
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
+=======
+# setting device on GPU if available, else CPU
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print('Using device:', device)
+>>>>>>> 246e250cb0ae0d8e78ca545c804ea92feb1c36ac
 
 # load dataset
 if args.dataset=='cifar10':
@@ -65,7 +91,11 @@ if args.dataset=='cifar10':
         )
     testset = torchvision.datasets.CIFAR10(
         root = './data',
+<<<<<<< HEAD
         train = False,
+=======
+        train = True,
+>>>>>>> 246e250cb0ae0d8e78ca545c804ea92feb1c36ac
         download = True,
         transform = transform,
         )
@@ -83,7 +113,11 @@ else:
         )
     testset = torchvision.datasets.MNIST(
         root = './data',
+<<<<<<< HEAD
         train = False,
+=======
+        train = True,
+>>>>>>> 246e250cb0ae0d8e78ca545c804ea92feb1c36ac
         download = True,
         transform = transform,
         )
@@ -127,6 +161,7 @@ shape_input = images.shape[1:]
 shape_output = torch.Size([10])
 h = torch.Size([args.size])
 
+<<<<<<< HEAD
 w = torch.tensor(torch.randn(shape_input+shape_output),requires_grad=True)
 u = torch.tensor(torch.randn(shape_input+h),requires_grad=True)
 v = torch.tensor(torch.randn(h+shape_output),requires_grad=True)
@@ -154,6 +189,25 @@ def neural_network(x):
     net = torch.einsum('bh,hl -> bl',net,v)
     return net
 
+=======
+w = torch.tensor(torch.rand(shape_input+shape_output),requires_grad=True,device=device)
+u = torch.tensor(torch.rand(shape_input+h),requires_grad=True,device=device)
+v = torch.tensor(torch.rand(h+shape_output),requires_grad=True,device=device)
+
+def linear(x):
+    return torch.einsum('bijk,ijkl -> bl',x,w)
+
+def factorized_linear(x):
+    return torch.einsum('bijk,ijkh,hl -> bl',x,u,v)
+
+relu = nn.ReLU()
+def neural_network(x):
+    net = torch.einsum('bijk,ijkh -> bh',x,u)
+    net = relu(net)
+    net = torch.einsum('bh,hl -> bl',net,v)
+    return net
+
+>>>>>>> 246e250cb0ae0d8e78ca545c804ea92feb1c36ac
 kitchen_sink = neural_network
 
 f = eval(args.model)
@@ -185,6 +239,8 @@ for epoch in range(args.epochs):
                 'loss_ave=',loss_ave
                 )
         images, labels = data
+        images.cuda()
+        labels.cuda()
         outputs = f(images)
         loss = criterion(outputs,labels)
         if loss_ave == float('inf'):
@@ -196,15 +252,28 @@ for epoch in range(args.epochs):
             w = w - args.alpha * w.grad
             w = torch.tensor(w,requires_grad=True)
         else:
+<<<<<<< HEAD
             #print('|u.grad|=',torch.norm(u.grad))
+=======
+>>>>>>> 246e250cb0ae0d8e78ca545c804ea92feb1c36ac
             if args.model!='kitchen_sink':
                 u = u - args.alpha * u.grad
                 u = torch.tensor(u,requires_grad=True)
             v = v - args.alpha * v.grad
             v = torch.tensor(v,requires_grad=True)
+<<<<<<< HEAD
 
     if args.eval_each_epoch:
         eval_test_set()
 
 if not args.eval_each_epoch:
     eval_test_set()
+=======
+
+    if args.eval_each_epoch:
+        eval_test_set()
+
+if not args.eval_each_epoch:
+    eval_test_set()
+
+>>>>>>> 246e250cb0ae0d8e78ca545c804ea92feb1c36ac

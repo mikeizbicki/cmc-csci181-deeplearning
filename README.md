@@ -16,6 +16,10 @@
 
 This is a course on **deep learning** (not big data).
 
+<p align=center>
+<img src=img/layers.png width=600px>
+</p>
+
 **Course Objectives:**
 
 Learning objectives:
@@ -128,24 +132,24 @@ FIXME:
 | 1    | Thur, 23 Jan | Automatic differentiation<br><ul><li>[pytorch tutorial part 1](https://pytorch.org/tutorials/beginner/blitz/tensor_tutorial.html)</li><li>[pytorch tutorial part 2](https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html)</li><li>[automatic differentiation tutorial](https://rufflewind.com/2016-12-30/reverse-mode-automatic-differentiation)</li><li>[einstein summation tutorial](https://rockt.github.io/2018/04/30/einsum)</li><li>[NeurIPS paper](http://papers.nips.cc/paper/8092-automatic-differentiation-in-ml-where-we-are-and-where-we-should-be-going)</li><li>[JMLR paper](http://www.jmlr.org/papers/v18/17-468.html)</li><li>[pytoch: forward mode ad](https://github.com/pytorch/pytorch/issues/10223)</li><li>[tensorflow: forward mode ad](https://github.com/pytorch/pytorch/issues/10223)</li></ul> |
 | 2    | Tues, 28 Jan | Machine Learning Basics (Deep Learning Book Part 1, especially chapters 5.2-5.4)                 |
 | 2    | Thur, 30 Jan | Optimization<br><ul><li>[why momentum really works](https://distill.pub/2017/momentum/)</li><li>[Leon Bottou's SGD paper](https://datajobs.com/data-science-repo/Stochastic-Gradient-Descent-[Leon-Bottou].pdf)</li><li>[pytorch loss functions](https://pytorch.org/docs/stable/nn.html#crossentropyloss)</li><li>[reflections on random kitchen sinks](http://www.argmin.net/2017/12/05/kitchen-sinks/)</li><li>[Ali Rahimi's NIPS/NeurIPS 2017 keynote](https://www.youtube.com/watch?v=Qi1Yry33TQE)</li><li>[OpenAI switches to PyTorch](https://openai.com/blog/openai-pytorch/)</li></ul>                            |
-| 3    | Tues, 04 Feb | Image: CNNs                             |
-| 3    | Thur, 06 Feb | Regularization: Dropout ([JMLR](http://jmlr.org/papers/v15/srivastava14a.html), [pytorch](https://stackoverflow.com/questions/53419474/using-dropout-in-pytorch-nn-dropout-vs-f-dropout)) |
-| 4    | Tues, 11 Feb | Regularization: BatchNorm ([ICML](http://proceedings.mlr.press/v37/ioffe15.html), [pytorch](https://stackoverflow.com/questions/47197885/how-to-do-fully-connected-batch-norm-in-pytorch))              |
-| 4    | Thur, 13 Feb | Image: ResNet                           |
-| 5    | Tues, 18 Feb | Image: YOLO                             |
-| 5    | Thur, 20 Feb | Image: Adversarial Examples             |
-| 6    | Tues, 25 Feb | Text: Word vs Character Models          |
-| 6    | Thur, 27 Feb | Text: RNN                               |
-| 7    | Tues, 03 Mar | Text: LSTM/GRU                          |
-| 7    | Thur, 05 Mar | Text: Attention                         |
-| 8    | Tues, 10 Mar | Text: Transformers (paper, [blog post](http://jalammar.github.io/illustrated-transformer/)) |
-| 8    | Thur, 12 Mar | Text: Translation                       |
-| 9    | Tues, 17 Mar | **NO CLASS:** Spring Break              |
+| 3    | Tues, 04 Feb | Image: CNNs<br><ul><li>[Stanford lecture slides](http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture05.pdf)</li></ul>                             |
+| 3    | Thur, 06 Feb | Image: CNNs II<br><ul><li>[An intuitive explanation of CNNs](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/) (compare with [eigenfaces](https://towardsdatascience.com/eigenfaces-recovering-humans-from-ghosts-17606c328184))</li><li>[The history of neural networks](https://dataconomy.com/2017/04/history-neural-networks/)</li></ul>[Summer Research](https://www.cmc.edu/summer-research/program-overview) |
+| 4    | Tues, 11 Feb | Regularization                          |
+| 4    | Thur, 13 Feb | Image: ResNet<br><ul><li>[Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)</li><li>[An Overview of ResNet and its Variants](https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035)</li><li>[CVPR2016 Video](https://www.youtube.com/watch?v=C6tLw-rPQ2o)</li></ul>More links:<ul><li>[Schmidhuber on ResNet I](http://people.idsia.ch/~juergen/microsoft-wins-imagenet-through-feedforward-LSTM-without-gates.html)</li><li>[Schmidhuber on ResNet II](http://people.idsia.ch/~juergen/highway-networks.html)</li><li>[Baidu scandal at ILSVRC15](https://web.archive.org/web/20150602165531/http://www.image-net.org/challenges/LSVRC/announcement-June-2-2015)</li><li>[What I learned from competing against a convnet on ImageNet](http://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/)</li><li>[MSCOCO](http://cocodataset.org)</li></ul>                           |
+| 5    | Tues, 18 Feb | ResNet continued                        |
+| 5    | Thur, 20 Feb | ResNet continued<ul><li>[DenseNet](https://arxiv.org/abs/1608.06993)</li><li>Visualizing the Landscape of Neural Network ([OpenReview](https://openreview.net/forum?id=HkmaTz-0W), [NIPS/NeurIPS](http://papers.nips.cc/paper/7875-visualizing-the-loss-landscape-of-neural-nets))</li></ul>                        |
+| 6    | Tues, 25 Feb | YOLO<br><ul><li>[YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767)</li><li>[YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242) and [reviews](https://pjreddie.com/publications/yolo9000/)</li><li>[You Only Look Once: Unified Real-Time Object Detection](http://arxiv.org/abs/1506.02640) and [reviews](https://pjreddie.com/publications/yolo/)</li><li>[YOLO video example](https://www.youtube.com/watch?v=MPU2HistivI)</li><li>[YOLO video presentation](https://www.youtube.com/watch?v=NM6lrxy0bxs&feature=youtu.be)</li><li>[Joseph Redmon's CV](https://pjreddie.com/static/Redmon%20Resume.pdf)</li><li>[Ethical concerns and YOLO](https://medium.com/syncedreview/yolo-creator-says-he-stopped-cv-research-due-to-ethical-concerns-b55a291ebb29)</li></ul>The MvMF loss for geolocation:<ul><li>[ECML-PKDD paper](https://izbicki.me/public/papers/ecmlpkdd2019-image-geolocation.pdf)</li></ul>                           |
+| 6    | Thur, 27 Feb | Text: Basic text models<ul><li>[bag of words]()</li><li>[tf-idr](http://www.tfidf.com/)</li><li>[n-grams](https://en.wikipedia.org/wiki/N-gram)</li><li>[zipf's law](https://en.wikipedia.org/wiki/Zipf%27s_law)</li><li>[hashing trick](https://booking.ai/dont-be-tricked-by-the-hashing-trick-192a6aae3087)</li></ul>Python text processing libraries:<ul><li>[spacy](https://spacy.io/)</li><li>[neuralcoref](https://github.com/huggingface/neuralcoref)</li><li>[NLTK](https://www.nltk.org/)</li><li>[TextBlob](https://textblob.readthedocs.io/en/dev/)</li><li>[textstat](https://pypi.org/project/textstat/)</li></ul>                 |
+| 7    | Tues, 03 Mar | Text: Word2Vec<ul><li>[high level overview](https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/)</li><li>[details with math](https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/)</li><li>[gender bias](http://wordbias.umiacs.umd.edu/)</li><li>[racial bias](https://www.pnas.org/content/115/16/E3635/tab-figures-data)</li><li>[histwords](https://nlp.stanford.edu/projects/histwords/)</li><li>[temporal word analogies](https://www.aclweb.org/anthology/P17-2071/)</li><li>[political words](https://arxiv.org/abs/1711.05603)</li></ul> |
+| 7    | Thur, 05 Mar | Text: CNNs<ul><li>[character-level convolutional networks for text classification](http://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classifica)</li><li>[very deep convolutional networks for text classification](https://arxiv.org/abs/1606.01781)</li></ul>                              |
+| 8    | Tues, 10 Mar | Text: RNN
+| 8    | Thur, 12 Mar | Text: LSTM                              |
+| 9    | Tues, 17 Mar | Text: GRU                               |
 | 9    | Thur, 19 Mar | **NO CLASS:** Spring Break              |
-| 10   | Tues, 24 Mar | TBD                                     |
-| 10   | Thur, 26 Mar | TBD                                     |
-| 11   | Tues, 31 Mar | TBD                                     |
-| 11   | Thur, 02 Apr | TBD                                     |
+| 10   | Tues, 24 Mar | **NO CLASS:** Spring Break              |
+| 10   | Thur, 26 Mar | Text: Attention                         |
+| 11   | Tues, 31 Mar | Text: Transformers (paper, [blog post](http://jalammar.github.io/illustrated-transformer/)) |
+| 11   | Thur, 02 Apr | Text: Translation                       |
 | 12   | Tues, 07 Apr | TBD                                     |
 | 12   | Thur, 09 Apr | TBD                                     |
 | 13   | Tues, 14 Apr | TBD                                     |
@@ -156,6 +160,11 @@ FIXME:
 | 15   | Thur, 30 Apr | Project Presentations                   |
 | 16   | Thur, 05 May | Project Presentations                   |
 | 16   | Thur, 07 May | **NO CLASS:** Reading Day               |
+
+<!--
+| 3    | Thur, 06 Feb | Regularization: Dropout ([JMLR](http://jmlr.org/papers/v15/srivastava14a.html), [pytorch](https://stackoverflow.com/questions/53419474/using-dropout-in-pytorch-nn-dropout-vs-f-dropout)) |
+| 4    | Tues, 11 Feb | Regularization: BatchNorm ([ICML](http://proceedings.mlr.press/v37/ioffe15.html), [pytorch](https://stackoverflow.com/questions/47197885/how-to-do-fully-connected-batch-norm-in-pytorch))              |
+-->
 
 <!-- GoogLeNet: https://arxiv.org/abs/1409.4842 -->
 <!-- MAY 8: Senior Grades due -->

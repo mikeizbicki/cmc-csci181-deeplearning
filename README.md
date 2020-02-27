@@ -139,17 +139,17 @@ FIXME:
 | 5    | Tues, 18 Feb | ResNet continued                        |
 | 5    | Thur, 20 Feb | ResNet continued<ul><li>[DenseNet](https://arxiv.org/abs/1608.06993)</li><li>Visualizing the Landscape of Neural Network ([OpenReview](https://openreview.net/forum?id=HkmaTz-0W), [NIPS/NeurIPS](http://papers.nips.cc/paper/7875-visualizing-the-loss-landscape-of-neural-nets))</li></ul>                        |
 | 6    | Tues, 25 Feb | YOLO<br><ul><li>[YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767)</li><li>[YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242) and [reviews](https://pjreddie.com/publications/yolo9000/)</li><li>[You Only Look Once: Unified Real-Time Object Detection](http://arxiv.org/abs/1506.02640) and [reviews](https://pjreddie.com/publications/yolo/)</li><li>[YOLO video example](https://www.youtube.com/watch?v=MPU2HistivI)</li><li>[YOLO video presentation](https://www.youtube.com/watch?v=NM6lrxy0bxs&feature=youtu.be)</li><li>[Joseph Redmon's CV](https://pjreddie.com/static/Redmon%20Resume.pdf)</li><li>[Ethical concerns and YOLO](https://medium.com/syncedreview/yolo-creator-says-he-stopped-cv-research-due-to-ethical-concerns-b55a291ebb29)</li></ul>The MvMF loss for geolocation:<ul><li>[ECML-PKDD paper](https://izbicki.me/public/papers/ecmlpkdd2019-image-geolocation.pdf)</li></ul>                           |
-| 6    | Thur, 27 Feb | Text: Word vs Character Models          |
-| 7    | Tues, 03 Mar | Text: RNN                               |
-| 7    | Thur, 05 Mar | Text: LSTM/GRU                          |
-| 8    | Tues, 10 Mar | Text: Attention                         |
-| 8    | Thur, 12 Mar | Text: Transformers (paper, [blog post](http://jalammar.github.io/illustrated-transformer/)) |
-| 9    | Tues, 17 Mar | Text: Translation                       |
+| 6    | Thur, 27 Feb | Text: Basic text models<ul><li>[bag of words]()</li><li>[tf-idr](http://www.tfidf.com/)</li><li>[n-grams](https://en.wikipedia.org/wiki/N-gram)</li><li>[zipf's law](https://en.wikipedia.org/wiki/Zipf%27s_law)</li><li>[hashing trick](https://booking.ai/dont-be-tricked-by-the-hashing-trick-192a6aae3087)</li></ul>Python text processing libraries:<ul><li>[spacy](https://spacy.io/)</li><li>[neuralcoref](https://github.com/huggingface/neuralcoref)</li><li>[NLTK](https://www.nltk.org/)</li><li>[TextBlob](https://textblob.readthedocs.io/en/dev/)</li><li>[textstat](https://pypi.org/project/textstat/)</li></ul>                 |
+| 7    | Tues, 03 Mar | Text: Word2Vec<ul><li>[high level overview](https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/)</li><li>[details with math](https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/)</li><li>[gender bias](http://wordbias.umiacs.umd.edu/)</li><li>[racial bias](https://www.pnas.org/content/115/16/E3635/tab-figures-data)</li><li>[histwords](https://nlp.stanford.edu/projects/histwords/)</li><li>[temporal word analogies](https://www.aclweb.org/anthology/P17-2071/)</li><li>[political words](https://arxiv.org/abs/1711.05603)</li></ul> |
+| 7    | Thur, 05 Mar | Text: CNNs<ul><li>[character-level convolutional networks for text classification](http://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classifica)</li><li>[very deep convolutional networks for text classification](https://arxiv.org/abs/1606.01781)</li></ul>                              |
+| 8    | Tues, 10 Mar | Text: RNN
+| 8    | Thur, 12 Mar | Text: LSTM                              |
+| 9    | Tues, 17 Mar | Text: GRU                               |
 | 9    | Thur, 19 Mar | **NO CLASS:** Spring Break              |
 | 10   | Tues, 24 Mar | **NO CLASS:** Spring Break              |
-| 10   | Thur, 26 Mar | TBD                                     |
-| 11   | Tues, 31 Mar | TBD                                     |
-| 11   | Thur, 02 Apr | TBD                                     |
+| 10   | Thur, 26 Mar | Text: Attention                         |
+| 11   | Tues, 31 Mar | Text: Transformers (paper, [blog post](http://jalammar.github.io/illustrated-transformer/)) |
+| 11   | Thur, 02 Apr | Text: Translation                       |
 | 12   | Tues, 07 Apr | TBD                                     |
 | 12   | Thur, 09 Apr | TBD                                     |
 | 13   | Tues, 14 Apr | TBD                                     |

@@ -111,7 +111,7 @@ Complete the following required tasks.
    and so we should somehow learn the optimal step size for each parameter independently.
    It almost always converges much faster than SGD in practice, but sometimes has worse generalization error.
    Because of the fast convergence, Adam is widely used in practice.
-   The original paper has over 38k citations.
+   The original paper has over [38k citations on google scholar](https://scholar.google.com/scholar?cluster=16194105527543080940).
    (I think it's the second most cited paper of all time after the resnet paper, but I'm not 100% sure how to check this.)
    Unfortunately, however, [a 2018 paper](https://openreview.net/forum?id=ryQu7f-RZ) found a fatal flaw in the proof of convergence of the Adam paper, and showed that Adam is guaranteed not to converge even on some simple convex problems.
    Despite this flaw, Adam remains widely popular, is the optimizer of choice for thousands of pytorch users, and has thousands of citations already this year.

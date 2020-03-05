@@ -123,7 +123,8 @@ Complete the following required tasks.
    GRUs and LSTMs have more complicated activation functions that try to better capture long-term dependencies within the input text.
    Visit [this webpage](https://medium.com/@saurabh.rathor092/simple-rnn-vs-gru-vs-lstm-difference-lies-in-more-flexible-control-5f33e07b1e57) to see a picture representation of each of the RNN units.
 
-   Importantly, the inputs and outputs of vanilla RNNs, GRUs, and LSTMs are all the same.
+   Understanding in detail the differences between the types of RNNs is not important.
+   What is important is that the inputs and outputs of vanilla RNNs, GRUs, and LSTMs are all the same.
    This means that you can easily switch between the type of recurrent network by simply calling the appropriate torch library function.
    (The functions are `torch.nn.RNN`, `torch.nn.GRU`, and `torch.nn.LSTM`.)
 
@@ -200,7 +201,7 @@ Complete the following required tasks.
    The whole procedure should take 10-30 minutes depending on the speed of your computer and the complexity of your model.
    This would be a good point to have an office chair jousting dual
    <p align=center>
-   <img src=img/xkcd-training.jpg>
+   <img src=img/xkcd-training.png>
    </p>
    (Comic modified from https://xkcd.com/303/)
 

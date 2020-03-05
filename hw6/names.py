@@ -116,7 +116,7 @@ class Model(nn.Module):
     def __init__(self):
         super(Model,self).__init__()
         self.rnn = nn.RNN(len(vocabulary),16)
-        self.output_logits = nn.Linear(16,n_categories)
+        self.output = nn.Linear(16,n_categories)
 
     def forward(self, x):
         out,h_n = self.rnn(x)

@@ -117,14 +117,11 @@ class Model(nn.Module):
         super(Model,self).__init__()
         self.rnn = nn.RNN(len(vocabulary),16)
         self.output_logits = nn.Linear(16,n_categories)
-        self.output_nextchar(16,len(vocabulary))
 
     def forward(self, x):
         out,h_n = self.rnn(x)
-        out_class = self.output(out[out.shape[0]-1,:,:])
-        x_shifted = torch.cat([x[1:,...],x.zeros([1]+list(x.shape[1:]))])
-        out_nextchars = torch.einsum('ijk,im->mjk',x_shifted,self.output_nextchar)
-        return out_logits,out_nextchars
+        out = self.output(out[out.shape[0]-1,:,:])
+        return out
 
 # load the model
 model = Model()

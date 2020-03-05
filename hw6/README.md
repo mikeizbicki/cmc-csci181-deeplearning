@@ -106,7 +106,16 @@ Complete the following required tasks.
    </p>
 
 1. **Optimization method:**
-   [Adam](https://arxiv.org/abs/1412.6980) is a popular alternative to SGD for optimizing models.
+   [Adam](https://arxiv.org/abs/1412.6980) is a popular alternative to SGD for optimizing models that was invented in 2014.
+   The basic idea behind Adam is that not all parameters will need to take the same step size on each iteration,
+   and so we should somehow learn the optimal step size for each parameter independently.
+   It almost always converges much faster than SGD in practice, but sometimes has worse generalization error.
+   Because of the fast convergence, Adam is widely used in practice.
+   The original paper has over 38k citations.
+   (I think it's the second most cited paper of all time after the resnet paper, but I'm not 100% sure how to check this.)
+   Unfortunately, however, [a 2018 paper](https://openreview.net/forum?id=ryQu7f-RZ) found a fatal flaw in the proof of convergence of the Adam paper, and showed that Adam is guaranteed not to converge even on some simple convex problems.
+   Despite this flaw, Adam remains widely popular, is the optimizer of choice for thousands of pytorch users, and has thousands of citations already this year.
+   In the deep learning world, people simply don't care about proofs yet.
 
    To add support for the Adam optimizer to the code,
    paste the following lines below the code for the SGD optimizer.

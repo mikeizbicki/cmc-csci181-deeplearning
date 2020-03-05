@@ -7,6 +7,7 @@ In this assignment, you will create a model that can predict the nationality of 
 **Learning Objective:**
 
 1. gain familiarity with character-level text models (RNN / CNN)
+1. effectively use tensorboard to monitor the training of models and select hyperparameters
 
 ## Tasks
 
@@ -41,6 +42,19 @@ Complete the following required tasks.
    $ wc -l names/*
    ```
    Observe based on this output that the training data is not equally balanced between classes.
+   
+   We will not be dividing this data up into a train/test split.
+   In this case, that is not needed, because our data is essentially exhaustive of all possible names.
+   (For example, the 94 Korean surnames account for >99% of all Korean last names.)
+   Our primary goal is not to generalize to unseen names,
+   but rather to have an efficient "compressed" representation of all names.
+   This wil let us create a function for assigning the nationality to a name without having to explicitly store and search all 20,000 names.
+   (As a side benefit, this function will generalize to typos and other unseen data, but we're not going to explicitly evaluate its ability to do this.)
+   
+   Compressing a training set without a test set is actually a common setting in deep learning.
+   The [Hutter Prize](http://prize.hutter1.net/) will award $500,000 to the first people to efficient compress all human knowledge (i.e. wikipedia),
+   and Google has a [similar competition](https://www.androidpolice.com/2018/01/12/compress-google-issues-machine-learning-challenge-build-better-jpeg/) for improving jpeg image compression.
+   Many AGI researchers believe that the problem of creating an optimal data compression scheme is isomorphic to creating artificial intelligence.
 
 1. **Different learning rates:**
    At the command prompt, execute the following line:
@@ -92,7 +106,16 @@ Complete the following required tasks.
    </p>
 
 1. **Optimization method:**
-   [Adam](https://arxiv.org/abs/1412.6980) is a popular alternative to SGD for optimizing models.
+   [Adam](https://arxiv.org/abs/1412.6980) is a popular alternative to SGD for optimizing models that was invented in 2014.
+   The basic idea behind Adam is that not all parameters will need to take the same step size on each iteration,
+   and so we should somehow learn the optimal step size for each parameter independently.
+   It almost always converges much faster than SGD in practice, but sometimes has worse generalization error.
+   Because of the fast convergence, Adam is widely used in practice.
+   The original paper has over [38k citations on google scholar](https://scholar.google.com/scholar?cluster=16194105527543080940).
+   (I think it's the second most cited paper of all time after the resnet paper, but I'm not 100% sure how to check this.)
+   Unfortunately, however, [a 2018 paper](https://openreview.net/forum?id=ryQu7f-RZ) found a fatal flaw in the proof of convergence of the Adam paper, and showed that Adam is guaranteed not to converge even on some simple convex problems.
+   Despite this flaw, Adam remains widely popular, is the optimizer of choice for thousands of pytorch users, and has thousands of citations already this year.
+   In the deep learning world, people simply don't care about proofs yet.
 
    To add support for the Adam optimizer to the code,
    paste the following lines below the code for the SGD optimizer.
@@ -107,13 +130,17 @@ Complete the following required tasks.
 
    Use the `--optimizer=adam` flag to train a model using Adam instead of SGD.
    Like SGD, Adam takes a learning rate hyperparameter,
-   and you should experiment with different values to find the optimal value.
 
    **Question 4:**
    What is the optimal learning rate for Adam?
+   and you should experiment with different values to find the optimal value.
+   
+   The [`torch.optim`](https://pytorch.org/docs/stable/optim.html?highlight=torch optim) module contains many other optimizers that you can use.
+   Select one of these additional optimizers to include in your code,
+   and make the appropriate adjustments in the arguments list and training loop.
 
    **Question 5:**
-   Which set of hyperparameters is converging faster?
+   Which combination of optimizer/hyperparameters is converging faster?
 
 1. **Different types of RNNs:**
    There are three different types of RNNs is common use.
@@ -194,6 +221,7 @@ Complete the following required tasks.
 1. **Longrun model training:**
    Once you have a set of model hyperparameters that you like,
    then increase `--samples` to 100000 to train a more accurate model.
+   (Depending on your specific hyperparameters, you may need to use an even larger number of samples to get the model to converge.)
    Then, use the `--warm_start` parameter to reload this model,
    and train for another 100000 samples (but this time with a learning rate lowered by a factor of 10).
    Repeat this procedure one more time.

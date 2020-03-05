@@ -49,7 +49,7 @@ Complete the following required tasks.
    Our primary goal is not to generalize to unseen names,
    but rather to have an efficient "compressed" representation of all names.
    This wil let us create a function for assigning the nationality to a name without having to explicitly store and search all 20,000 names.
-   (As a side benefit, this function will generalize to typos and other unseen data.)
+   (As a side benefit, this function will generalize to typos and other unseen data, but we're not going to explicitly evaluate its ability to do this.)
    
    Compressing a training set without a test set is actually a common setting in deep learning.
    The [Hutter Prize](http://prize.hutter1.net/) will award $500,000 to the first people to efficient compress all human knowledge (i.e. wikipedia),

@@ -66,7 +66,7 @@ Complete the following required tasks.
    $ tensorboard --logdir=log
    ```
    You should observe that the loss function is diverging.
-   Experiment with different loss functions to find the optimal value.
+   Experiment with different learning rates to find the optimal value (i.e. the largest value that causes the loss to converge to zero).
 
    **NOTE:**
    In order to easily interpret the tensorboard plots, you may have to increasing the smoothing paramaeter very close to 1.

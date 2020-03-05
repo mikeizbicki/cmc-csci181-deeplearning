@@ -42,6 +42,18 @@ Complete the following required tasks.
    $ wc -l names/*
    ```
    Observe based on this output that the training data is not equally balanced between classes.
+   
+   We will not be dividing this data up into a train/test split.
+   In this case, that is not needed, because our data is essentially exhaustive of all possible names.
+   (For example, the 94 Korean surnames account for >99% of all Korean last names.)
+   Our primary goal is not to generalize to unseen names,
+   but rather to have an efficient "compressed" representation of all names.
+   This wil let us create a function for assigning the nationality to a name without having to explicitly store and search all 20,000 names.
+   (As a side benefit, this function will generalize to typos and other unseen data.)
+   
+   Compressing a training set without a test set is actually a common setting in deep learning.
+   The [Hutter Prize](http://prize.hutter1.net/) will award $500,000 to the first people to efficient compress all human knowledge (i.e. wikipedia),
+   and Google has a [similar competition](https://www.androidpolice.com/2018/01/12/compress-google-issues-machine-learning-challenge-build-better-jpeg/) for improving jpeg image compression.
 
 1. **Different learning rates:**
    At the command prompt, execute the following line:
@@ -195,6 +207,7 @@ Complete the following required tasks.
 1. **Longrun model training:**
    Once you have a set of model hyperparameters that you like,
    then increase `--samples` to 100000 to train a more accurate model.
+   (Depending on your specific hyperparameters, you may need to use an even larger number of samples to get the model to converge.)
    Then, use the `--warm_start` parameter to reload this model,
    and train for another 100000 samples (but this time with a learning rate lowered by a factor of 10).
    Repeat this procedure one more time.

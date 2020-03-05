@@ -130,13 +130,17 @@ Complete the following required tasks.
 
    Use the `--optimizer=adam` flag to train a model using Adam instead of SGD.
    Like SGD, Adam takes a learning rate hyperparameter,
-   and you should experiment with different values to find the optimal value.
 
    **Question 4:**
    What is the optimal learning rate for Adam?
+   and you should experiment with different values to find the optimal value.
+   
+   The [`torch.optim`](https://pytorch.org/docs/stable/optim.html?highlight=torch optim) module contains many other optimizers that you can use.
+   Select one of these additional optimizers to include in your code,
+   and make the appropriate adjustments in the arguments list and training loop.
 
    **Question 5:**
-   Which set of hyperparameters is converging faster?
+   Which combination of optimizer/hyperparameters is converging faster?
 
 1. **Different types of RNNs:**
    There are three different types of RNNs is common use.

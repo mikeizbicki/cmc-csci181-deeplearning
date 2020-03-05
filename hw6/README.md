@@ -7,6 +7,7 @@ In this assignment, you will create a model that can predict the nationality of 
 **Learning Objective:**
 
 1. gain familiarity with character-level text models (RNN / CNN)
+1. effectively use tensorboard to monitor the training of models and select hyperparameters
 
 ## Tasks
 

@@ -54,6 +54,7 @@ Complete the following required tasks.
    Compressing a training set without a test set is actually a common setting in deep learning.
    The [Hutter Prize](http://prize.hutter1.net/) will award $500,000 to the first people to efficient compress all human knowledge (i.e. wikipedia),
    and Google has a [similar competition](https://www.androidpolice.com/2018/01/12/compress-google-issues-machine-learning-challenge-build-better-jpeg/) for improving jpeg image compression.
+   Many AGI researchers believe that the problem of creating an optimal data compression scheme is isomorphic to creating artificial intelligence.
 
 1. **Different learning rates:**
    At the command prompt, execute the following line:

@@ -124,7 +124,7 @@ class Model(nn.Module):
         out_class = self.output(out[out.shape[0]-1,:,:])
         x_shifted = torch.cat([x[1:,...],x.zeros([1]+list(x.shape[1:]))])
         out_nextchars = torch.einsum('ijk,im->mjk',x_shifted,self.output_nextchar)
-        return out_logits,out_nextchars 
+        return out_logits,out_nextchars
 
 # load the model
 model = Model()

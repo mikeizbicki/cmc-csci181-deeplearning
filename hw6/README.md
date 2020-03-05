@@ -15,8 +15,9 @@ Complete the following required tasks.
 1. **Download the starter code and data:**
    On the command line, run:
    ```
-   $ wget
-   $ wget
+   $ wget https://github.com/mikeizbicki/cmc-csci181/blob/master/hw6/names.py
+   $ wget https://github.com/mikeizbicki/cmc-csci181/blob/master/hw6/names.tar.gz
+   $ tar -xf names.tar.gz
    ```
    You should always manually inspect the data values before performing any coding or model training.
    In this case, get a list of the data files by running
@@ -84,6 +85,11 @@ Complete the following required tasks.
 
    **Question 3:**
    Which set of hyperparameters is converging faster?
+
+   At this point, hopefully this XKCD comic is starting to make sense:
+   <p align=center>
+   <img src=https://imgs.xkcd.com/comics/machine_learning_2x.png width=400px>
+   </p>
 
 1. **Optimization method:**
    [Adam](https://arxiv.org/abs/1412.6980) is a popular alternative to SGD for optimizing models.
@@ -192,6 +198,11 @@ Complete the following required tasks.
    Repeat this procedure one more time.
 
    The whole procedure should take 10-30 minutes depending on the speed of your computer and the complexity of your model.
+   This would be a good point to have an office chair jousting dual
+   <p align=center>
+   <img src=img/xkcd-training.jpg>
+   </p>
+   (Comic modified from https://xkcd.com/303/)
 
 1. **Inference:**
    You can use the `--infer` parameter combined with `--warm_start` to use the model for inference (sometimes called model *deployment*).

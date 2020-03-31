@@ -2,7 +2,7 @@
 
 In this assignment, you will create a model that can predict the nationality of surnames.
 
-**Due:** Thursday, 12 March at midnight
+**Due:** ~~Thursday 12 March~~ Sunday 29 March at midnight
 
 **Learning Objective:**
 

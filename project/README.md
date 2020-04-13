@@ -3,10 +3,39 @@
 **Overview:**
 This is the final project for [CMC's CS181: Deep Learning](https://github.com/mikeizbicki/cmc-csci181) course.
 The project will guide you through the process of using state of the art deep learning techniques to analyze the news coverage of the coronavirus.
-The dataset you will analyze contains more than 1 million news articles written in 20 languages and published in 30,000 venues around the world.
+The dataset you will analyze contains 2 million news articles written in 20 languages and published in 50,000 venues around the world.
 Despite this large dataset size,
 the project has been designed to be completed on only modest hardware,
 and specifically does not require access to a GPU.
+
+**Scientific goals:**
+We will try to answer the following questions:
+
+1. What is the bias of different news sources? (geographic, topical, ideological, etc.)
+
+1. How has coverage of the coronavirus changed over time?
+
+1. Can we detect/generate "fake news" stories about the coronavirus?
+    Wikipedia has a [big list of fake news stories related to coronavirus](https://en.wikipedia.org/wiki/Misinformation_related_to_the_2019%E2%80%9320_coronavirus_pandemic).
+
+<!--
+1. Given a particular meme can we track its spread through the media?
+    1. **Geographic:** 
+        The [LATimes](https://latimes.com) will publish different articles than the [Miami Herold](https://www.miamiherald.com), and both of these will be different than the [Choson Ilbo](http://english.chosun.com/) (a Korean newspaper).
+        In order to understand the news about a given region,
+        we first need to be able to find all the newspapers that report about a given region.
+
+    1. **Topical:**
+
+    1. **Ideological:**
+        The Huffington Post is typically pro-imigration, and has run stories about [doctors detained by ICE complaining about conditions in detention centers](https://www.huffpost.com/entry/coronavirus-fear-in-immigrant-detention_n_5e8dd8b0c5b6e1d10a6cfa87),
+        and the pro-isolationist InfoWars has run stories about [migrant labor causing the spread of the coronavirus](https://www.infowars.com/migrant-labor-was-to-blame-for-coronavirus-spread-in-both-iran-italy/).
+-->
+
+<!--
+    For example, there have been thouands of news stories about facemasks and whether they help prevent the spread of coronavirus.
+    At different times
+-->
 
 **Learning objectives:**
 
@@ -25,36 +54,6 @@ and specifically does not require access to a GPU.
     1. learn how to approach a problem that no one knows the answers to
 
 1. Understand the research process
-
-**Scientific goals:**
-We will try to answer the following questions:
-
-1. What is the bias of different news sources? (geographic, topical, ideological, etc.)
-
-<!--
-    1. **Geographic:** 
-        The [LATimes](https://latimes.com) will publish different articles than the [Miami Herold](https://www.miamiherald.com), and both of these will be different than the [Choson Ilbo](http://english.chosun.com/) (a Korean newspaper).
-        In order to understand the news about a given region,
-        we first need to be able to find all the newspapers that report about a given region.
-
-    1. **Topical:**
-
-    1. **Ideological:**
-        The Huffington Post is typically pro-imigration, and has run stories about [doctors detained by ICE complaining about conditions in detention centers](https://www.huffpost.com/entry/coronavirus-fear-in-immigrant-detention_n_5e8dd8b0c5b6e1d10a6cfa87),
-        and the pro-isolationist InfoWars has run stories about [migrant labor causing the spread of the coronavirus](https://www.infowars.com/migrant-labor-was-to-blame-for-coronavirus-spread-in-both-iran-italy/).
--->
-
-1. How has coverage of the coronavirus changed over time?
-
-<!--
-    For example, there have been thouands of news stories about facemasks and whether they help prevent the spread of coronavirus.
-    At different times
--->
-
-1. Given a particular meme can we track its spread through the media?
-
-1. Can we detect/generate "fake news" stories about the coronavirus?
-    Wikipedia has a [big list of fake news stories related to coronavirus](https://en.wikipedia.org/wiki/Misinformation_related_to_the_2019%E2%80%9320_coronavirus_pandemic).
 
 **Related projects:**
 
@@ -322,7 +321,7 @@ let probs = softmax(model(input_tensor))
 for each word in the input sentence:
     construct input_tensor' by setting the colums associated with word to 0
     let probs' = softmax(model(input_tensor))
-    weight[word] = |probs-probs'|_p
+    weight[word] = |probs-probs'|
 ```
 
 **Character level explanations.**

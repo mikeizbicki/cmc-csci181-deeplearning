@@ -70,14 +70,14 @@ The closest related research to this project is:
 
 You can download version 0 of the dataset at:
 
-1. training set: https://izbicki.me/public/cs/cs181/corona-title.train.gz
-1. test set: https://izbicki.me/public/cs/cs181/corona-title.test.gz
+1. training set: https://izbicki.me/public/cs/cs181/coronavirus-headlines-train.jsonl.gz
+1. test set: https://izbicki.me/public/cs/cs181/coronavirus-headlines-test.jsonl.gz
 
 You should download the training set and place it in a directory called `coronavirus_headlines` with the following commands:
 ```
 $ mkdir coronavirus_headlines
 $ cd coronavirus_headlines
-$ wget https://izbicki.me/public/cs/cs181/corona-title.train.gz
+$ wget https://izbicki.me/public/cs/cs181/coronavirus-headlines-train.jsonl.gz
 ```
 
 The dataset is stored in the [JSON Lines](http://jsonlines.org/) format,
@@ -94,7 +94,7 @@ where every line represents a single news articles and has the following keys:
 This isn't every article ever written about the coronavirus,
 but it's a large fraction of them.
 The list has been filtered to include only English language articles,
-and articles whose title contains one of the strings `coronavirus`, `corona virus`, or `covid`.
+and articles whose title contains one of the strings `coronavirus`, `corona virus`, `covid` or `ncov`.
 
 ## Part 1: explainable machine learning
 

@@ -104,18 +104,18 @@ We will see that this gives us a simple (but crude) way to measure how similar t
 
 I trained this model with the following command:
 ```
-$ python3 names.py                                                  \
-    --train                                                         \
-    --data=coronavirus_headlines/corona-title.train.gz              \
-    --data_format=headlines                                         \
-    --model=gru                                                     \
-    --hidden_layer_size=512                                         \
-    --num_layers=8                                                  \
-    --resnet                                                        \
-    --dropout=0.2                                                   \
-    --optimizer=adam                                                \
-    --learning_rate=1e-3                                            \
-    --gradient_clipping                                             \
+$ python3 names.py                                                      \
+    --train                                                             \
+    --data=coronavirus-headlines/coronavirus-headlines-train.jsonl.gz   \
+    --data_format=headlines                                             \
+    --model=gru                                                         \
+    --hidden_layer_size=512                                             \
+    --num_layers=8                                                      \
+    --resnet                                                            \
+    --dropout=0.2                                                       \
+    --optimizer=adam                                                    \
+    --learning_rate=1e-3                                                \
+    --gradient_clipping                                                 \
     --batch_size=128 
 ```
 You do not have to run this command yourself, as it will take a long time.

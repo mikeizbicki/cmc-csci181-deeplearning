@@ -98,6 +98,8 @@ and articles whose title contains one of the strings `coronavirus`, `corona viru
 
 ## Part 1: explainable machine learning
 
+**due date:** Thursday, 23 April
+
 ### What's already been done 
 Our first goal when analyzing this dataset is to predict the hostname that published an article given just the title.
 We will see that this gives us a simple (but crude) way to measure how similar two different hostnames are.

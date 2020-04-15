@@ -294,7 +294,7 @@ model.to(device)
 
 if args.warm_start:
     print('warm starting model from',args.warm_start)
-    model_dict = torch.load(os.path.join(args.warm_start,'model'))
+    model_dict = torch.load(os.path.join(args.warm_start,'model'), map_location=device)
     model.load_state_dict(model_dict['model_state_dict'])
 
 # training

@@ -75,8 +75,8 @@ You can download version 0 of the dataset at:
 
 You should download the training set and place it in a directory called `coronavirus_headlines` with the following commands:
 ```
-$ mkdir coronavirus_headlines
-$ cd coronavirus_headlines
+$ mkdir coronavirus-headlines
+$ cd coronavirus-headlines
 $ wget https://izbicki.me/public/cs/cs181/coronavirus-headlines-train.jsonl.gz
 ```
 

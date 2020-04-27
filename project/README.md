@@ -378,6 +378,7 @@ It contains news headlines written in:
 1. Chinese,
 1. Korean,
 1. and Japanese.
+
 For each of these 10 languages, 10 prominent news sources were selected to be included in the dataset.
 There are therefore 100 classes.
 The overall size of the dataset 106767 headines, and so there are about 1000 headlines per news source.

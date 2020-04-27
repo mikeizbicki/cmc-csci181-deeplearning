@@ -354,13 +354,60 @@ Example outputs:
 1. Reproduce the example explanations above to ensure that your code is working correctly
 1. Select 3 titles from the training data and generate word/char level explanations for these titles
 
-### Submission:
+### Submission
 
 Upload your explanation images and source code to sakai.
 
 ## Part 2: the attention mechanism and fine tuning
 
-Coming soon...
+This part of the assignment is based on a new dataset [corona.multilan100.jsonl.gz](https://izbicki.me/public/cs/cs181/corona.multilang100.jsonl.gz),
+which is in the same format as the previous dataset.
+You should download this file and place it in your project folder.
+
+Unlike the previous dataset, this dataset is multilingual.
+It contains news headlines written in:
+1. English,
+1. Spanish,
+1. Portuguese,
+1. Italian,
+1. French,
+1. German,
+1. Russian,
+1. Chinese,
+1. Korean,
+1. and Japanese.
+For each of these 10 languages, 10 prominent news sources were selected to be included in the dataset.
+There are therefore 100 classes.
+The overall size of the dataset 106767 headines, and so there are about 1000 headlines per news source.
+
+The character level model we used before will not work in this multilingual setting because many of these languages use different vocabularies.
+We will instead use the BERT transformer model and the [transformers](https://huggingface.co/transformers/) python library.
+
+### Tasks for you to complete
+
+1. Add support for training a multilingual BERT model to the `names.py` file.
+1. Train the BERT model so that you get at least the following training accuuracies:
+    1. accuracy@1 >= 0.3
+    1. accuracy@20 >= 0.9
+
+    These are very conservative numbers.
+    You can view my [tensorboard.dev log](https://tensorboard.dev/experiment/2WJbkgdyTlGvh6Gk4mu0PQ/#scalars&_smoothingWeight=0.99) to see what type of performance levels are possible.
+
+    You will have to experiment with different hyperparamter combinations in order to get good results.
+    You do not have to do any warmstarts to get these results.
+    I encourage you to try warmstarts since you can get much better accuracies,
+    but the computational expense may be too much for some of your computers,
+    and so I am not requiring it.
+
+1. Generate a tensorboard.dev plot showing your model training progress
+
+### Submission
+
+Upload the link to you tensorboard.dev output on sakai
+
+### Optional task
+
+Extend the explanation code from part 1 so that it works on the BERT model as well.
 
 ## Part 3: embeddings
 

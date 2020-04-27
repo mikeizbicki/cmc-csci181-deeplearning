@@ -75,8 +75,8 @@ You can download version 0 of the dataset at:
 
 You should download the training set and place it in a directory called `coronavirus_headlines` with the following commands:
 ```
-$ mkdir coronavirus_headlines
-$ cd coronavirus_headlines
+$ mkdir coronavirus-headlines
+$ cd coronavirus-headlines
 $ wget https://izbicki.me/public/cs/cs181/coronavirus-headlines-train.jsonl.gz
 ```
 
@@ -97,6 +97,8 @@ The list has been filtered to include only English language articles,
 and articles whose title contains one of the strings `coronavirus`, `corona virus`, `covid` or `ncov`.
 
 ## Part 1: explainable machine learning
+
+**due date:** Thursday, 23 April
 
 ### What's already been done 
 Our first goal when analyzing this dataset is to predict the hostname that published an article given just the title.

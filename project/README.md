@@ -435,7 +435,7 @@ and that vector encodes lots of information about the class.
 We call this vector an "embedding" of the class.
 
 By visualizing the embeddings, we can understand which classes our model thinks are "similar".
-Tensorboard has some built-in tools for this visualization
+Tensorboard has some built-in tools for this visualization using algorithms like PCA and t-SNE.
 
 ### Tasks for you to complete
 

@@ -414,4 +414,35 @@ Extend the explanation code from part 1 so that it works on the BERT model as we
 
 ## Part 3: embeddings
 
-Coming soon...
+Recall that in the previous part of the project, we created the following BERT model:
+
+```
+class BertFineTuning(torch.nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.fc_class = torch.nn.Linear(768,num_classes)
+
+    def forward(self,x):
+        last_layer,embedding = bert(x) 
+        embedding = torch.mean(last_layer,dim=1)
+        out = self.fc(embedding)
+        return out
+```
+
+The linear layer `self.fc_class` is just a matrix that is `768 x num_classes`.
+In other words, each class has a 768 dimensional vector associated with it,
+and that vector encodes lots of information about the class.
+We call this vector an "embedding" of the class.
+
+By visualizing the embeddings, we can understand which classes our model thinks are "similar".
+Tensorboard has some built-in tools for this visualization
+
+### Tasks for you to complete
+
+1. Modify your `names.py` file so that it outputs class embeddings to tensorboard.
+
+1. Load tensorboard and visualize the resulting embeddings.
+
+### Submission
+
+Upload a screenshot of your embeddings and your source code to sakai.

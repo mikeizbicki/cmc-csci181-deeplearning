@@ -425,7 +425,7 @@ class BertFineTuning(torch.nn.Module):
     def forward(self,x):
         last_layer,embedding = bert(x) 
         embedding = torch.mean(last_layer,dim=1)
-        out = self.fc(embedding)
+        out = self.fc_class(embedding)
         return out
 ```
 
